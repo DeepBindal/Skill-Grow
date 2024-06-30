@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fetchCourses = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/course/fetch/usercourse/${
+        `https://skill-grow.onrender.com/api/course/fetch/usercourse/${
           JSON.parse(localStorage.getItem("adminUser")).user._id
         }`
       );
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (confirm("Are you sure you want to delete this course?")) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/course/${courseId}`,
+          `https://skill-grow.onrender.com/api/course/${courseId}`,
           {
             method: "DELETE",
           }
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fetch course data to pre-fill the form
     try {
       const response = await fetch(
-        `http://localhost:5000/api/course/${courseId}`
+        `https://skill-grow.onrender.com/api/course/${courseId}`
       );
       const course = await response.json();
 
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/course/${courseId}`,
+        `https://skill-grow.onrender.com/api/course/${courseId}`,
         {
           method: "PUT",
           headers: {

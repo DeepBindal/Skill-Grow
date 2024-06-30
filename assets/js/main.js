@@ -488,18 +488,3 @@ if (isAuthenticated) {
 logoutBtn?.addEventListener("click", () => {
   localStorage.clear();
 });
-
-const test = async () => {
-  const response = await fetch("http://localhost:5000/protected", {
-    method: "GET",
-    headers: {
-      Authorization: `Bearer ${JSON.parse(localStorage.getItem('user'))?.token}`, 
-      "Content-Type": "application/json",
-    },
-  });
-
-  const res = await response.json();
-  console.log(res);
-};
-
-// test();

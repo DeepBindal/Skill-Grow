@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const adminUser = JSON.parse(localStorage.getItem("adminUser"));
         course.by = adminUser.user._id;
         try {
-            const response = await fetch('http://localhost:5000/api/course/create-course', {
+            const response = await fetch('https://skill-grow.onrender.com/api/course/create-course', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

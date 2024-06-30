@@ -37,4 +37,5 @@ app.get("/getGoogleToken", (req, res) => {
 
 app.get("/", (req, res, next) => {
   // next(new ExpressError(400, "Not found"))
+  res.send("hello world")
 });

@@ -42,7 +42,7 @@ function saveUserToLocalStorage(user) {
     const payload = { email, password, role: "admin" };
     console.log(payload)
   
-    const response = await fetch("http://localhost:5000/auth/login", {
+    const response = await fetch("https://skill-grow.onrender.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
@@ -69,7 +69,7 @@ function saveUserToLocalStorage(user) {
   
   window.onload = async function () {
 
-    const response = await fetch("http://localhost:5000/getGoogleToken")
+    const response = await fetch("https://skill-grow.onrender.com/getGoogleToken")
     const res = await response.json()
   
       google.accounts.id.initialize({
@@ -86,7 +86,7 @@ function saveUserToLocalStorage(user) {
   async function handleCredentialResponse(googleResponse) {
     const idToken = googleResponse.credential;
     // console.log(idToken)
-    const response = await fetch("http://localhost:5000/auth/google", {
+    const response = await fetch("https://skill-grow.onrender.com/auth/google", {
       method: "POST",
       headers: {
         // 'Authorization': `Bearer ${idToken}`,

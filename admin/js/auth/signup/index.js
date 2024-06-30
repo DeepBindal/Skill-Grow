@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(payload)
 
         try {
-            const response = await fetch("http://localhost:5000/auth/admin/signup", {
+            const response = await fetch("https://skill-grow.onrender.com/auth/admin/signup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', checkAuthAndRedirect);
 
 window.onload = async function () {
 
-  const response = await fetch("http://localhost:5000/getGoogleToken")
+  const response = await fetch("https://skill-grow.onrender.com/getGoogleToken")
   const res = await response.json()
 
     google.accounts.id.initialize({
@@ -102,7 +102,7 @@ window.onload = async function () {
   async function handleCredentialResponse(googleResponse) {
     const idToken = googleResponse.credential;
     // console.log(idToken)
-    const response = await fetch("http://localhost:5000/auth/google", {
+    const response = await fetch("https://skill-grow.onrender.com/auth/google", {
       method: "POST",
       headers: {
         // 'Authorization': `Bearer ${idToken}`,
