@@ -1,0 +1,73 @@
+/* Edit Form Overlay */
+.edit-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.edit-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.edit-form h2 {
+    margin-top: 0;
+}
+
+.edit-form .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-form .form-group input,
+.edit-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.edit-form button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-form button:hover {
+    background-color: #0056b3;
+}
+
+.edit-form button#cancelEditBtn {
+    background-color: #f44336;
+}
+
+.edit-form button#cancelEditBtn:hover {
+    background-color: #d32f2f;
+}
+
+.edit-button {
+    margin: 10px 0;
+}
+ .delete-button { 
+    margin: 10px 0;
+ }

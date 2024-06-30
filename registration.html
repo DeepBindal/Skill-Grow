@@ -209,12 +209,7 @@
                         <div class="singUp-wrap">
                             <h2 class="title">Create Your Account</h2>
                             <p>Hey there! Ready to join the party? We just need a few details from you to get <br> started. Let's do this!</p>
-                            <div class="account__social">
-                                <a href="#" class="account__social-btn">
-                                    <img src="assets/img/icons/google.svg" alt="img">
-                                    Continue with google
-                                </a>
-                            </div>
+                            <div id="google-signin-button"></div>
                             <div class="account__divider">
                                 <span>or</span>
                             </div>
@@ -393,6 +388,8 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/auth/signup/index.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script>
         SVGInject(document.querySelectorAll("img.injectable"));
     </script>

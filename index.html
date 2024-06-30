@@ -112,6 +112,8 @@
                                         <li class=""><a href="contact.html">Contact</a>
                                             
                                         </li>
+                                        <li class=""><a href="/admin/index.html">Add courses</a>                                            
+                                        </li>
                                         <li class=""><a href="blog.html">Blog</a>
                                             
                                         </li>
@@ -121,11 +123,14 @@
                                 <div class="tgmenu__action">
                                     <ul class="list-wrap">
                                        
-                                        <li class="header-btn login-btn">
+                                        <li class="header-btn loginBtn login-btn">
                                             <a href="login.html">Log in</a>
                                         </li>
-                                        <li class="header-btn login-btn">
+                                        <li class="header-btn signupBtn login-btn">
                                             <a href="registration.html">Sign up</a>
+                                        </li>
+                                        <li class="header-btn login-btn hideBtn logoutBtn">
+                                            <a href="registration.html">Logout</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1234,7 +1239,9 @@
     <script src="assets/js/jquery.lettering.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/aos.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
     <script>
         SVGInject(document.querySelectorAll("img.injectable"));
     </script>
